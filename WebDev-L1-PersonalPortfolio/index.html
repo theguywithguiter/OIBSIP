@@ -1,1 +1,93 @@
-    <!-- Personal Portfolio Project -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Subham Datta — Computer Science student and developer portfolio.">
+  <title>Subham Datta — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="logo" href="#home"><span class="logo-mark">S.</span><span>SUBHAM<span class="logo-muted">DATTA</span></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <div class="nav-menu"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact" class="nav-cta">Let's talk ↗</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-left">
+        <div class="availability"><span></span> OPEN TO LEARNING & COLLABORATION</div>
+        <p class="mono intro">HELLO, WORLD. I'M</p>
+        <h1>Subham<br><span>Datta.</span></h1>
+        <p class="role">CSE Student <i>·</i> Developer <i>·</i> Problem Solver</p>
+        <p class="summary">I build thoughtful digital experiences and explore how software, data, and AI can solve practical problems. Currently pursuing B.Tech in Computer Science Engineering (AI & ML).</p>
+        <div class="hero-buttons"><a class="btn primary" href="#projects">Explore my work ↘</a><a class="btn secondary" href="#contact">Get in touch</a></div>
+        <div class="location mono">BASED IN KOLKATA, INDIA <span>·</span> LEARNING BY BUILDING</div>
+      </div>
+      <div class="hero-right">
+        <div class="portrait-card">
+          <div class="portrait-top"><span class="mono">PROFILE / 001</span><span class="status-dot"></span></div>
+          <div class="monogram">S<span>D</span></div>
+          <div class="portrait-bottom"><span class="mono">CSE · AI/ML</span><span class="arrow">↗</span></div>
+        </div>
+        <div class="orbit-label label-one mono">BUILD / TEST / LEARN</div><div class="orbit-label label-two mono">IDEAS INTO INTERFACES</div>
+        <div class="floating-symbol">✳</div>
+      </div>
+    </section>
+
+    <section class="ticker"><div class="ticker-inner mono"><span>FRONTEND DEVELOPMENT</span><b>✳</b><span>FULL-STACK PROJECTS</span><b>✳</b><span>AI & MACHINE LEARNING</span><b>✳</b><span>CONTINUOUS LEARNING</span></div></section>
+
+    <section class="section wrap" id="about">
+      <div class="section-label mono"><span>01</span> / ABOUT ME</div>
+      <div class="about-grid"><h2>Curious by nature.<br><span>Built to create.</span></h2><div><p>I'm a Computer Science Engineering student at Brainware University, specialising in AI & Machine Learning. I enjoy turning ideas into useful digital products and learning the engineering behind them.</p><p>My interests span frontend interfaces, full-stack web development, cloud-backed applications, and practical AI tools. I learn best by building, testing, and improving real projects.</p><a class="inline-link" href="#contact">Have a project in mind? Let's connect ↗</a></div></div>
+    </section>
+
+    <section class="section skills-section" id="skills"><div class="wrap"><div class="section-label mono"><span>02</span> / TOOLKIT</div><div class="section-title-row"><h2>Tools I use to<br><span>make things work.</span></h2><p>Always learning. Always refining.</p></div>
+      <div class="skill-groups">
+        <article class="skill-group"><div class="skill-icon">⌘</div><h3>Languages</h3><div class="chips"><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>C</span><span>SQL</span><span>HTML5</span><span>CSS3</span></div></article>
+        <article class="skill-group"><div class="skill-icon">◈</div><h3>Web & Frameworks</h3><div class="chips"><span>React</span><span>Next.js</span><span>Vite</span><span>Tailwind CSS</span><span>REST APIs</span><span>DOM</span></div></article>
+        <article class="skill-group"><div class="skill-icon">▧</div><h3>Tools & Platforms</h3><div class="chips"><span>Git</span><span>GitHub</span><span>Cloudflare</span><span>SQLite / D1</span><span>R2 Storage</span><span>VS Code</span></div></article>
+      </div>
+    </div></section>
+
+    <section class="section wrap" id="projects"><div class="section-label mono"><span>03</span> / SELECTED WORK</div><div class="section-title-row"><h2>Projects with<br><span>purpose.</span></h2><p>A selection of projects exploring product thinking, frontend craft, and full-stack development.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-dark"><div class="project-top"><span class="mono">01 / FLAGSHIP</span><span class="project-arrow">↗</span></div><div class="project-art zelora-art"><span>Z</span><i>PERSONALISE YOUR EVERYDAY</i></div><div class="project-info"><div><h3>ZELORA</h3><p>A premium personalised jewellery e-commerce experience with product customisation, order management, and cloud-backed infrastructure.</p></div><div class="tags"><span>Next.js</span><span>TypeScript</span><span>Cloudflare D1</span><span>R2</span></div><a href="https://github.com/" target="_blank" rel="noreferrer">Project repository ↗</a></div></article>
+        <article class="project-card"><div class="project-top"><span class="mono">02 / FRONTEND</span><span class="project-arrow">↗</span></div><div class="project-art career-art"><div class="browser-bar"><i></i><i></i><i></i></div><div class="career-visual"><span class="mono">FIND YOUR NEXT</span><strong>OPPORTUNITY<span>.</span></strong><div class="search-line">Search roles, skills, companies <b>→</b></div></div></div><div class="project-info"><div><h3>CareerPortal</h3><p>A responsive job discovery interface featuring role browsing, interactive UI elements, and client-side behaviour.</p></div><div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive UI</span></div><a href="https://careerportal-one.vercel.app/" target="_blank" rel="noreferrer">View live project ↗</a></div></article>
+        <article class="project-card"><div class="project-top"><span class="mono">03 / CREATIVE WEB</span><span class="project-arrow">↗</span></div><div class="project-art void-art"><span>VOID<span>WEAR</span></span><small>LESS NOISE. MORE YOU.</small></div><div class="project-info"><div><h3>VoidWear</h3><p>A fashion e-commerce landing experience focused on strong visual identity, product presentation, and responsive layouts.</p></div><div class="tags"><span>Web Design</span><span>CSS</span><span>JavaScript</span></div><a href="https://github.com/" target="_blank" rel="noreferrer">Project repository ↗</a></div></article>
+      </div>
+      <p class="placeholder-note mono">NOTE: Replace placeholder GitHub links with the exact repository URLs before publishing.</p>
+    </section>
+
+    <section class="experience-section"><div class="wrap"><div class="section-label mono"><span>04</span> / EXPERIENCE & EDUCATION</div><div class="timeline">
+      <article><div class="timeline-date mono">OCT 2026 — PRESENT</div><div><h3>Web Development Intern <span class="pending">NEW</span></h3><p class="timeline-org">Oasis Infobyte · Internship</p><p>Completing project-based web development assignments, documenting implementations, and presenting working demos. Update this entry to match the official designation and verified responsibilities.</p></div></article>
+      <article><div class="timeline-date mono">JAN 2026 — MAR 2026</div><div><h3>Frontend Intern</h3><p class="timeline-org">Gameonix Technology</p><p>Worked on frontend development tasks using HTML, CSS, and Python in a practical project environment.</p></div></article>
+      <article><div class="timeline-date mono">2025 — 2029</div><div><h3>B.Tech, Computer Science Engineering (AI & ML)</h3><p class="timeline-org">Brainware University · Kolkata</p><p>Building a foundation in programming, software development, data, and artificial intelligence.</p></div></article>
+    </div></div></section>
+
+    <section class="contact-section" id="contact"><div class="wrap contact-grid"><div><div class="section-label mono"><span>05</span> / CONTACT</div><h2>Let's build<br><span>something useful.</span></h2><p>Open to learning opportunities, project collaborations, and conversations with fellow builders.</p></div><div class="contact-card"><span class="mono">START A CONVERSATION</span><a href="mailto:subham@example.com">Email me ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/theguywithguiter" target="_blank" rel="noreferrer">GitHub ↗</a><small>Replace the email placeholder with your professional email before publishing.</small></div></div></section>
+  </main>
+  <footer class="footer wrap"><a class="logo" href="#home"><span class="logo-mark">S.</span><span>SUBHAM<span class="logo-muted">DATTA</span></span></a><p class="mono">DESIGNED & BUILT WITH CURIOSITY · © 2026</p><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.nav-menu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth'}); }
+    }));
+  </script>
+</body>
+</html>
