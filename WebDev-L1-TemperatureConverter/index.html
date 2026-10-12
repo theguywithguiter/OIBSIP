@@ -1,1 +1,41 @@
-    <!-- Temperature Converter Project -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tempora temperature converter — Celsius, Fahrenheit and Kelvin.">
+  <title>Tempora — Temperature Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#"><span class="brand-icon">°</span>TEMPORA</a><span class="top-note">A LITTLE CLARITY, BY THE DEGREE.</span></header>
+  <main class="page-shell">
+    <section class="intro"><p class="eyebrow"><span></span> EVERY SCALE, ONE PLACE</p><h1>Temperature,<br><em>translated.</em></h1><p>Convert between Celsius, Fahrenheit, and Kelvin with a little less mental math.</p></section>
+    <section class="converter-card" aria-labelledby="converter-title">
+      <div class="card-head"><div><p class="mono">CONVERSION TOOL / 001</p><h2 id="converter-title">Make the switch.</h2></div><div class="thermo-icon">♨</div></div>
+      <form id="converter-form" novalidate>
+        <label for="temperature">Temperature value</label>
+        <div class="input-row"><input id="temperature" name="temperature" type="number" step="any" placeholder="e.g. 24" inputmode="decimal" autocomplete="off"><select id="from-unit" name="from-unit" aria-label="Input temperature unit"><option value="C">°C Celsius</option><option value="F">°F Fahrenheit</option><option value="K">K Kelvin</option></select></div>
+        <p class="input-help">Enter a value and choose its current unit.</p>
+        <button class="convert-button" type="submit">Convert temperature <span>↗</span></button>
+      </form>
+      <p id="error-message" class="error-message" role="alert" aria-live="polite"></p>
+      <div class="results" aria-live="polite">
+        <div class="results-heading"><span class="mono">YOUR RESULTS</span><button id="reset-button" type="button">Reset ↺</button></div>
+        <div class="result-grid">
+          <article class="result-tile active" data-unit="C"><span class="unit-name">CELSIUS</span><strong id="result-C">—</strong><small>°C</small><span class="result-desc">Metric scale</span></article>
+          <article class="result-tile" data-unit="F"><span class="unit-name">FAHRENHEIT</span><strong id="result-F">—</strong><small>°F</small><span class="result-desc">Everyday US scale</span></article>
+          <article class="result-tile" data-unit="K"><span class="unit-name">KELVIN</span><strong id="result-K">—</strong><small>K</small><span class="result-desc">Scientific scale</span></article>
+        </div>
+        <p id="result-summary" class="result-summary">Your converted values will appear here.</p>
+      </div>
+    </section>
+    <section class="info-strip"><div><span class="info-symbol">01</span><p><strong>Enter</strong><small>Add a numeric temperature.</small></p></div><div><span class="info-symbol">02</span><p><strong>Choose</strong><small>Select the original unit.</small></p></div><div><span class="info-symbol">03</span><p><strong>Convert</strong><small>See all three scales at once.</small></p></div></section>
+    <footer class="page-footer"><span>DESIGNED TO KEEP THINGS SIMPLE.</span><span>OIBSIP · WEB DEVELOPMENT TASK</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
